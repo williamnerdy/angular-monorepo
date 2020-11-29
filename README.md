@@ -4,15 +4,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ng serve --open --project=app1 --baseHref /app1
+ng serve --open --project=app2 --baseHref /app2
+ng serve --open --project=app3 --baseHref /app3
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Docker Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+docker build app1 --build-arg APPLICATION_NAME=app1 --build-arg BASE_URL=/app1 .
+docker build app2 --build-arg APPLICATION_NAME=app2 --build-arg BASE_URL=/app2 .
+docker build app3 --build-arg APPLICATION_NAME=app3 --build-arg BASE_URL=/app3 .
 
 ## Running unit tests
 
