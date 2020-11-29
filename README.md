@@ -4,9 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-ng serve --open --project=app1 --baseHref /app1
-ng serve --open --project=app2 --baseHref /app2
-ng serve --open --project=app3 --baseHref /app3
+ng serve --open --project=app1 --baseHref=/app1
+ng serve --open --project=app2 --baseHref=/app2
+ng serve --open --project=app3 --baseHref=/app3
 
 ## Code scaffolding
 
