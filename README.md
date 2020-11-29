@@ -4,27 +4,27 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-ng serve --open --project=app1 --baseHref=/app1
-ng serve --open --project=app2 --baseHref=/app2
-ng serve --open --project=app3 --baseHref=/app3
+`ng serve --open --project=app1 --baseHref=/app1`
+`ng serve --open --project=app2 --baseHref=/app2`
+`ng serve --open --project=app3 --baseHref=/app3`
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name --project=project-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Docker Build
 
-docker build app1 --build-arg APPLICATION_NAME=app1 --build-arg BASE_URL=/app1 .
-docker build app2 --build-arg APPLICATION_NAME=app2 --build-arg BASE_URL=/app2 .
-docker build app3 --build-arg APPLICATION_NAME=app3 --build-arg BASE_URL=/app3 .
+`docker build app1 --build-arg APPLICATION_NAME=app1 --build-arg BASE_URL=/app1 .`
+`docker build app2 --build-arg APPLICATION_NAME=app2 --build-arg BASE_URL=/app2 .`
+`docker build app3 --build-arg APPLICATION_NAME=app3 --build-arg BASE_URL=/app3 .`
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test --project=project-name` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng e2e --project=project-name` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
