@@ -105,7 +105,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "app1:build"
+            "browserTarget": "app1:build",
+            "port": 4201
           },
           "configurations": {
             "production": {
@@ -225,7 +226,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "app2:build"
+            "browserTarget": "app2:build",
+            "port": 4202
           },
           "configurations": {
             "production": {
@@ -345,7 +347,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "app3:build"
+            "browserTarget": "app3:build",
+            "port": 4203
           },
           "configurations": {
             "production": {
