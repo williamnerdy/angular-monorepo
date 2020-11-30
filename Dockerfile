@@ -1,5 +1,4 @@
 ARG APPLICATION_NAME
-ARG BASE_URL
 
 # Building app
 FROM node:12-alpine as build-stage
