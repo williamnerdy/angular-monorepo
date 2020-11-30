@@ -14,9 +14,9 @@ Run `ng generate component component-name --project=project-name` to generate a 
 
 ## Docker Build
 
-`docker build app1 --build-arg APPLICATION_NAME=app1 .`
-`docker build app2 --build-arg APPLICATION_NAME=app2 .`
-`docker build app3 --build-arg APPLICATION_NAME=app3 .`
+`docker build -t app1 --build-arg APPLICATION_NAME=app1 .`
+`docker build -t app2 --build-arg APPLICATION_NAME=app2 .`
+`docker build -t app3 --build-arg APPLICATION_NAME=app3 .`
 
 ## Running unit tests
 
