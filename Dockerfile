@@ -5,6 +5,7 @@ FROM node:12-alpine as build-stage
 WORKDIR /app
 COPY . .
 RUN npm ci --silent
+RUN npm run build --  --prod --project=my-components
 RUN npm run build --  --prod --project=$APPLICATION_NAME
 
 # Starting NGINX
