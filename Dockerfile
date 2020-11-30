@@ -5,7 +5,7 @@ ARG BASE_URL
 FROM node:12-alpine as build-stage
 WORKDIR /app
 COPY . .
-RUN npm ci --silent --only=production
+RUN npm ci --silent
 RUN npm run build --  --prod --project=$APPLICATION_NAME
 
 # Starting NGINX
