@@ -6,7 +6,7 @@ FROM node:12-alpine as build-stage
 WORKDIR /app
 COPY . .
 RUN npm ci --silent --only=production
-RUN npm run build --  --prod --project=$APPLICATION_NAME --baseHref=$BASE_URL
+RUN npm run build --  --prod --project=$APPLICATION_NAME
 
 # Starting NGINX
 FROM nginx:1.18.0-alpine
