@@ -5,8 +5,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 `ng serve --open --project=app1`
-`ng serve --open --project=app2`
-`ng serve --open --project=app3`
 
 ## Code scaffolding
 
@@ -15,8 +13,10 @@ Run `ng generate component component-name --project=project-name` to generate a 
 ## Docker Build
 
 `docker build -t app1 --build-arg APPLICATION_NAME=app1 .`
-`docker build -t app2 --build-arg APPLICATION_NAME=app2 .`
-`docker build -t app3 --build-arg APPLICATION_NAME=app3 .`
+
+## Run All projects
+
+`docker-compose up`
 
 ## Running unit tests
 
