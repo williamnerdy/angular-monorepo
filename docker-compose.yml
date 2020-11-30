@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+  app1:
+    container_name: app1
+    build:
+      context: .
+    args:
+      APPLICATION_NAME: app1
+
+  app2:
+    container_name: app2
+    build:
+      context: .
+    args:
+      APPLICATION_NAME: app2
+
+  app3:
+    container_name: app3
+    build:
+      context: .
+    args:
+      APPLICATION_NAME: app3
+
+  orchestrator:
+    container_name: orchestrator
+    ports:
+      - 80:80
+    depends_on:
+      - app1
+      - app2
+      - app3
+    build:
+      context: ./orchestrator
