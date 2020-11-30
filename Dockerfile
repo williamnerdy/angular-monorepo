@@ -5,7 +5,7 @@ COPY . .
 ARG APPLICATION_NAME
 RUN npm ci --silent
 RUN npm run build --  --prod --project=my-components
-RUN npm run build --  --prod --project=$APPLICATION_NAME
+RUN npm run build --  --prod --project=$APPLICATION_NAME --deploy-url=/$APPLICATION_NAME/
 
 # Starting NGINX
 FROM nginx:1.18.0-alpine
